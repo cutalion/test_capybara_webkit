@@ -1,0 +1,12 @@
+%h1 Home Page
+
+= form_tag search_url, :remote => true, :method => :get, :id => 'search_form' do
+  %p 
+    = label_tag :search
+    = text_field_tag :search
+  %p
+    = submit_tag "Find"
+
+
+%h1 Posts
+#posts
